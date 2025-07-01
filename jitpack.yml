@@ -1,2 +1,5 @@
 jdk: openjdk21
-install: true  
+install: true
+before_install:
+  - mkdir -p ~/.m2/repository/io/papermc/paper/paper-api/1.21.3-R0.1-MODIFIED/
+  - cp paper-api-* ~/.m2/repository/io/papermc/paper/paper-api/1.21.3-R0.1-MODIFIED/
