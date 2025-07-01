@@ -1,0 +1,459 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.papermc.paper",
+    "module": "paper-api",
+    "version": "1.21.3-R0.1-MODIFIED",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "io.papermc.paperweight.main-capability": "io.papermc.paper:paper-api:1.21.3-R0.1-MODIFIED",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.mojang",
+          "module": "brigadier",
+          "version": {
+            "requires": "1.2.9"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "32.1.2-jre"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.10.1"
+          }
+        },
+        {
+          "group": "net.md-5",
+          "module": "bungeecord-chat",
+          "version": {
+            "requires": "1.20-R0.2-deprecated+build.18"
+          },
+          "excludes": [
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            }
+          ]
+        },
+        {
+          "group": "org.yaml",
+          "module": "snakeyaml",
+          "version": {
+            "requires": "2.2"
+          }
+        },
+        {
+          "group": "org.joml",
+          "module": "joml",
+          "version": {
+            "requires": "1.10.5"
+          }
+        },
+        {
+          "group": "com.googlecode.json-simple",
+          "module": "json-simple",
+          "version": {
+            "requires": "1.1.1"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "it.unimi.dsi",
+          "module": "fastutil",
+          "version": {
+            "requires": "8.5.6"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.17.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.9"
+          }
+        },
+        {
+          "group": "org.apache.maven",
+          "module": "maven-resolver-provider",
+          "version": {
+            "requires": "3.9.6"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-bom",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-gson"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-legacy"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-plain"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-logger-slf4j"
+        },
+        {
+          "group": "org.checkerframework",
+          "module": "checker-qual",
+          "version": {
+            "requires": "3.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "paper-api-1.21.3-R0.1-MODIFIED.jar",
+          "url": "paper-api-1.21.3-R0.1-MODIFIED.jar",
+          "size": 2532573,
+          "sha512": "18017973f8fd52f916d846559a7d7b8bc90a9f95d6a7fea90d1a3a950b3fbe5637c7f41b6c1bb3d523fbade28884fe052da7900c8e1afc70b60df7a5afffcd07",
+          "sha256": "aa76dbc4b3f94ca33deba44b63673dc27bf787987ab166b469b48865f9b1fde1",
+          "sha1": "9ff3c39ddbbb5e4fba1796088f2d997d460af630",
+          "md5": "37da6b9bfeb0d509a81d1d899df09579"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.destroystokyo.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-api",
+          "version": "1.21.3-R0.1-MODIFIED"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "io.papermc.paperweight.main-capability": "io.papermc.paper:paper-api:1.21.3-R0.1-MODIFIED",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.7.1"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.7.1"
+          }
+        },
+        {
+          "group": "com.mojang",
+          "module": "brigadier",
+          "version": {
+            "requires": "1.2.9"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "32.1.2-jre"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.10.1"
+          }
+        },
+        {
+          "group": "net.md-5",
+          "module": "bungeecord-chat",
+          "version": {
+            "requires": "1.20-R0.2-deprecated+build.18"
+          },
+          "excludes": [
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            }
+          ]
+        },
+        {
+          "group": "org.yaml",
+          "module": "snakeyaml",
+          "version": {
+            "requires": "2.2"
+          }
+        },
+        {
+          "group": "org.joml",
+          "module": "joml",
+          "version": {
+            "requires": "1.10.5"
+          }
+        },
+        {
+          "group": "com.googlecode.json-simple",
+          "module": "json-simple",
+          "version": {
+            "requires": "1.1.1"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "it.unimi.dsi",
+          "module": "fastutil",
+          "version": {
+            "requires": "8.5.6"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.17.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.9"
+          }
+        },
+        {
+          "group": "org.apache.maven",
+          "module": "maven-resolver-provider",
+          "version": {
+            "requires": "3.9.6"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-bom",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-gson"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-legacy"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-plain"
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-logger-slf4j"
+        }
+      ],
+      "files": [
+        {
+          "name": "paper-api-1.21.3-R0.1-MODIFIED.jar",
+          "url": "paper-api-1.21.3-R0.1-MODIFIED.jar",
+          "size": 2532573,
+          "sha512": "18017973f8fd52f916d846559a7d7b8bc90a9f95d6a7fea90d1a3a950b3fbe5637c7f41b6c1bb3d523fbade28884fe052da7900c8e1afc70b60df7a5afffcd07",
+          "sha256": "aa76dbc4b3f94ca33deba44b63673dc27bf787987ab166b469b48865f9b1fde1",
+          "sha1": "9ff3c39ddbbb5e4fba1796088f2d997d460af630",
+          "md5": "37da6b9bfeb0d509a81d1d899df09579"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.destroystokyo.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-api",
+          "version": "1.21.3-R0.1-MODIFIED"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "io.papermc.paperweight.main-capability": "io.papermc.paper:paper-api:1.21.3-R0.1-MODIFIED",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paper-api-1.21.3-R0.1-MODIFIED-sources.jar",
+          "url": "paper-api-1.21.3-R0.1-MODIFIED-sources.jar",
+          "size": 1834492,
+          "sha512": "f918a9ae630e65628d7a35fce20d5210eb16567a1fbe5fdfbedb4c34e358ef699958f660de3718a65886c223d5a58629a84b10f9edfcdbfd077e8c3c1380f49d",
+          "sha256": "d79349cf58e1224641c9627d9d6695bd5a3c3941f8183f4ee7d6541df9408470",
+          "sha1": "67327e2c3808d9120911dc3ecc201abc77f8393d",
+          "md5": "349340cb09979d87edb3dfc891ba0e29"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.destroystokyo.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-api",
+          "version": "1.21.3-R0.1-MODIFIED"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "io.papermc.paperweight.main-capability": "io.papermc.paper:paper-api:1.21.3-R0.1-MODIFIED",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "paper-api-1.21.3-R0.1-MODIFIED-javadoc.jar",
+          "url": "paper-api-1.21.3-R0.1-MODIFIED-javadoc.jar",
+          "size": 15390896,
+          "sha512": "396f83c0e136b5bcb686054d599afd930d22940e912288bdfb79b9bcf44901412b9020724699721ed3e3160a875a4c596596709deae133697271519f70b83516",
+          "sha256": "f69deaf09eca45c158f00224ccca42186977d4d04bca90a0cbabbef3e5eed57f",
+          "sha1": "a9116aa49cbca49237d81b09f4bdfbe3ce00838c",
+          "md5": "589efdf16b044fc053f3955e33d8ed7b"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "com.destroystokyo.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-mojangapi",
+          "version": "1.21.3-R0.1-MODIFIED"
+        },
+        {
+          "group": "io.papermc.paper",
+          "name": "paper-api",
+          "version": "1.21.3-R0.1-MODIFIED"
+        }
+      ]
+    }
+  ]
+}
